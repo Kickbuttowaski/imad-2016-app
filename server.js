@@ -9,10 +9,11 @@ heading:'Audio launch',
 content:'Varalam va varalam va '
 },
 'content1':{
-title:'vedalam',
+title:' gilli',
 heading:'Audio launch',
 content:'Varalam va varalam va '
 }};
+
 function createtemp(data)
 {
     var title=data.title;
