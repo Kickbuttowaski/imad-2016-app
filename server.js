@@ -2,12 +2,17 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
-var content={
+var articles={
+'content':{
 title:'Bairava',
 heading:'Audio launch',
 content:'Varalam va varalam va '
-};
-
+},
+'content1':{
+title:'Bairava',
+heading:'Audio launch',
+content:'Varalam va varalam va '
+}};
 function createtemp(data)
 {
     var title=data.title;
@@ -36,8 +41,9 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article-one',function(req,res) {
-res.send(createtemp(content));
+app.get('/:art',function(req,res) {
+    var art=req.params.art;
+res.send(createtemp(articles[art]));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
