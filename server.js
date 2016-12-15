@@ -4,14 +4,14 @@ var path = require('path');
 
 var content={
 title:'Bairava',
-Heading:'Audio launch',
+heading:'Audio launch',
 content:'Varalam va varalam va '
 };
 
 function createtemp(data)
 {
     var title=data.title;
-    var Heading=data.Heading;
+    var heading=data.heading;
     var content=data.content;
 var htmltem=
     `<html>
@@ -26,7 +26,7 @@ var htmltem=
         
         </div>
         </body>
-</html>`:
+</html>`;
 return htmltemp;
 }    
 
