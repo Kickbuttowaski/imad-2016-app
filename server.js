@@ -9,7 +9,7 @@ heading:'Audio launch',
 content:'Varalam va varalam va '
 },
 'content1':{
-title:'Bairava',
+title:'vedalam',
 heading:'Audio launch',
 content:'Varalam va varalam va '
 }};
